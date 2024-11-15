@@ -29,21 +29,21 @@ else:
     print("No se pudo establecer la conexión")
 
 # Función para enviar comandos al Arduino
-def send_command(command):
-    arduino.write(command.encode())
-    time.sleep(0.1)
-    response = arduino.readline().decode().strip()
-    return response
+#def send_command(command):
+ #   arduino.write(command.encode())
+  #  time.sleep(0.1)
+   # response = arduino.readline().decode().strip()
+    #return response
 
 # Ejemplo de comandos
 # Cambia al modo remoto
-send_command('MODO_REMOTO')
+#send_command('MODO_REMOTO')
 
 # Ajusta la corriente (0-15 Vdc, ajusta según lo que necesita el inversor)
-send_command('CORRIENTE:10')  # Por ejemplo, 10 V
+#send_command('CORRIENTE:10')  # Por ejemplo, 10 V
 
 # Envía señal TTL si se requiere
-send_command('TTL_SIGNAL')
+#send_command('TTL_SIGNAL')
 
 # Cierra la conexión al final
-arduino.close()
+#arduino.close()
