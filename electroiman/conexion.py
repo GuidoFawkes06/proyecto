@@ -3,7 +3,7 @@ import serial
 import time
 
 # Configura la conexión serial
-arduino = serial.Serial(port='COM3', baudrate=9600, timeout=1)
+#arduino = serial.Serial(port='COM3', baudrate=9600, timeout=1)
 
 def verificar_conexion (puerto_serial):
     try:
